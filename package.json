@@ -1,0 +1,21 @@
+{
+  "name": "webpack-targets-browserslist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "build:webpack",
+    "build:babel": "babel src/index.js --out-file lib/index.js",
+    "build:webpack": "webpack",
+    "create-snapshot": "browserslist last 2 versions \"> 0.5%, last 2 versions, Firefox ESR, not dead, not IE 11\" > .browserslistrc"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "browserslist": "^4.17.0",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
